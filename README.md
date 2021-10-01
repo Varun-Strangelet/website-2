@@ -1,4 +1,4 @@
-# The Kubernetes documentation
+# The Kubernetes documentation:
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/be93b718-a6df-402a-b4a4-855ba186c97d/deploy-status)](https://app.netlify.com/sites/kubernetes-io-main-staging/deploys) [![GitHub release](https://img.shields.io/github/release/kubernetes/website.svg)](https://github.com/kubernetes/website/releases/latest)
 
@@ -7,11 +7,11 @@ This repository contains the assets required to build the [Kubernetes website an
 - [Contributing to the docs](#contributing-to-the-docs)
 - [Localization ReadMes](#localization-readmemds)
 
-## Using this repository
+## Using this repository:
 
 You can run the website locally using Hugo (Extended version), or you can run it in a container runtime. We strongly recommend using the container runtime, as it gives deployment consistency with the live website.
 
-## Prerequisites
+## Prerequisites:
 
 To use this repository, you need the following installed locally:
 
@@ -34,7 +34,7 @@ The Kubernetes website uses the [Docsy Hugo theme](https://github.com/google/doc
 git submodule update --init --recursive --depth 1
 ```
 
-## Running the website using a container
+## Running the website using a container:
 
 To build the site in a container, run the following to build the container image and run it:
 
@@ -47,7 +47,7 @@ If you see errors, it probably means that the hugo container did not have enough
 
 Open up your browser to <http://localhost:1313> to view the website. As you make changes to the source files, Hugo updates the website and forces a browser refresh.
 
-## Running the website locally using Hugo
+## Running the website locally using Hugo:
 
 Make sure to install the Hugo extended version specified by the `HUGO_VERSION` environment variable in the [`netlify.toml`](netlify.toml#L10) file.
 
@@ -61,7 +61,7 @@ make serve
 
 This will start the local Hugo server on port 1313. Open up your browser to <http://localhost:1313> to view the website. As you make changes to the source files, Hugo updates the website and forces a browser refresh.
 
-## Building the API reference pages
+## Building the API reference pages:
 
 The API reference pages located in `content/en/docs/reference/kubernetes-api` are built from the Swagger specification, using <https://github.com/kubernetes-sigs/reference-docs/tree/master/gen-resourcesdocs>.
 
